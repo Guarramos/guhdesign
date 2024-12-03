@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="bg-light sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img class="logo" src="Images/Logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfólio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#baixe-app">Baixe o App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Carrossel -->
+    <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/Prancheta 1.jpg" class="d-block w-100" alt="Banner 1">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Prancheta 1 cópia.jpg" class="d-block w-100" alt="Banner 2">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/Prancheta 1 cópia 2.jpg" class="d-block w-100" alt="Banner 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Proximo</span>
+        </button>
+    </div>
+
+    <!-- Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container text-center">
+            <h2>Sobre</h2>
+            <h4 class="mb-4 text-muted">Gustavo e sua criação</h4>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p>No Gustavo's Design, sou movido pela paixão de transformar ideias em realidade. Desde o início da
+                        minha jornada como designer, sempre acreditei no poder do design para conectar marcas e pessoas
+                        de forma única e impactante. Cada projeto é uma oportunidade de criar algo autêntico, que
+                        combine criatividade, funcionalidade e propósito.</p>
+                    <p> Meu trabalho vai além da estética. Dedico atenção a cada detalhe para garantir que as soluções
+                        criadas comuniquem mensagens claras e reflitam a identidade de cada cliente. Seja na criação de
+                        uma identidade visual marcante, no desenvolvimento de materiais gráficos ou em projetos
+                        digitais, meu objetivo é superar expectativas e agregar valor real ao seu negócio.</p>
+                        <p> Acredito que o design tem o poder de transformar histórias em experiências visuais memoráveis. É
+                            com esse compromisso que encaro cada desafio, sempre buscando inovação e excelência em cada
+                            entrega. No Gustavo's Design, sua visão é o ponto de partida para algo extraordinário.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="Images/Guh.JPEG" alt="Sobre imagem" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Portfólio</h2>
+            <h4 class="mb-4 text-muted">Tudo que você precisa saber sobre meu trabalho</h4>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="Images/Camisas.JPEG" alt="Projeto 1">
+                    <div class="overlay">
+                        <h5>Design de camisetas</h5>
+                        <p>Uniformes, brindes, o limite é sua imaginação!</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images/Fotografia.JPEG" alt="Projeto 2">
+                    <div class="overlay">
+                        <h5>Fotos comerciais</h5>
+                        <p>Cobertura de eventos até fotos para seus storys.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images/post.JPEG" alt="Projeto 3">
+                    <div class="overlay">
+                        <h5>Post's para redes sociais</h5>
+                        <p>Posts para seu feed em qualquer rede social.</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images/sinalização.png" alt="Projeto 4">
+                    <div class="overlay">
+                        <h5>Placas e sinalização.</h5>
+                        <p>Painéis, adesivos, tudo que você precisar para seus desejos!</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images/Varias outras areas.JPEG" alt="Projeto 5">
+                    <div class="overlay">
+                        <h5>Papelaria para sua empresa</h5>
+                        <p>Papelaria básica pra seu comércio!</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="Images/Identidade visual e logo.JPEG" alt="Projeto 6">
+                    <div class="overlay">
+                        <h5>Identidade viausl e logos</h5>
+                        <p>Crio de identidade visual a logos do zero para o que for necessário.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <h4 class="mb-4 text-muted">Quer fazer um pedido? Só entrar e contato!</h4>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name" placeholder="Seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" placeholder="Seu e-mail">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="message" rows="5" placeholder="Sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+<!-- Baixe o App -->
+<section id="baixe-app" class="py-5">
+    <div class="container text-center">
+        <h2 class="mb-4">Baixe o App</h2>
+        <p class="mb-4">Acesse todo o conteúdo e serviços do Gustavo's Design na palma da sua mão.</p>
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <img src="Images/codigo.jpg" alt="QR Code para download do app" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-4 align-self-center">
+                <a href="https://play.google.com" class="btn btn-primary btn-lg" target="_blank">Baixar na Play Store</a>
+                <br>
+                <a href="https://www.apple.com/app-store/" class="btn btn-secondary btn-lg mt-3" target="_blank">Baixar na App Store</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Rodapé -->
+    <footer class="py-3 bg-dark text-white text-center">
+        <p>&copy; 2024 Gustavo's Design. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

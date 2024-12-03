@@ -1,0 +1,181 @@
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    max-width: 150px;
+    height: auto;
+}
+
+#sobre p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+
+/* Garantir que os h4 dentro do portfólio e do contato se comportem como no "Sobre" */
+#portfolio h4, #contato h4 {
+    text-align: center; /* Alinha ao centro */
+    font-weight: 600; /* Deixar o peso da fonte igual ao do "Sobre" */
+    color: #6c757d; /* Cor similar ao "Sobre" */
+    margin-bottom: 20px; /* Distância entre o h4 e o conteúdo abaixo */
+}
+
+/* Definir o h4 no Sobre para ter o mesmo estilo */
+#sobre h4 {
+    text-align: center; /* Alinha ao centro */
+    font-weight: 600; /* Peso da fonte consistente */
+    color: #6c757d; /* Cor de texto */
+    margin-bottom: 20px; /* Distância entre o título e o texto */
+}
+
+/* Garantir que as seções do portfolio e contato tenham o mesmo comportamento de layout */
+#portfolio, #contato {
+    width: 100%;
+    text-align: center; /* Garantir que o texto dentro da seção esteja centralizado */
+}
+
+#portfolio h4, #contato h4 {
+    font-size: 1.25rem; /* Tamanho da fonte do h4 para se alinhar com o "Sobre" */
+    margin-top: 20px; /* Adiciona um pouco de espaço no topo */
+}
+
+/* Certificar que o conteúdo está alinhado de forma apropriada */
+#portfolio .container, #contato .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Garantir que o conteúdo no container também esteja centralizado */
+}
+
+
+#contato {
+    padding: 50px 0; /* Espaçamento maior acima e abaixo */
+    background-color: #f8f9fa; /* Fundo claro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px; /* Garantir altura mínima maior */
+}
+
+#contato .container {
+    max-width: 1000px; /* Largura máxima maior */
+    width: 100%;
+}
+
+#contato .form-control {
+    width: 100%; /* Garante que os campos ocupem 100% da largura */
+    padding: 15px; /* Mais espaço interno nos campos */
+    margin-bottom: 20px; /* Espaçamento entre os campos */
+    font-size: 1rem; /* Ajuste do tamanho da fonte */
+}
+
+#contato .btn {
+    width: 100%; /* Botão ocupa toda a largura */
+    padding: 15px;
+    font-size: 1.2rem; /* Aumenta o tamanho do botão */
+    margin-top: 20px;
+}
+
+/* Para o formulário não encolher muito, garantimos que ele tenha largura e altura adequada */
+#contato form {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto; /* Centraliza o formulário */
+}
+
+
+
+
+
+.col-md-6 img {
+max-height: 500px;
+}
+
+/* Portfólio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Três colunas de tamanhos iguais */
+    gap: 20px; /* Espaçamento entre as colunas e linhas */
+}
+
+.portfolio-item {
+    position: relative; /* Necessário para posicionar o overlay */
+    overflow: hidden; /* Garante que os elementos internos não ultrapassem os limites */
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+    filter: blur(3px);
+}
+
+.overlay {
+    position: absolute; /* Permite posicionar dentro do item */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1; /* Garante que o overlay fique acima da imagem */
+}
+
+.portfolio-item:hover .overlay {
+    opacity: 1; /* Torna o overlay visível ao passar o mouse */
+}
+
+#baixe-app {
+    background-color: #f8f9fa; /* Cor de fundo clara */
+}
+
+#baixe-app img {
+    max-width: 200px; /* Tamanho do QR Code */
+    margin-bottom: 20px;
+}
+
+#baixe-app .btn {
+    width: 100%; /* Botões grandes e responsivos */
+}
+
+/* Adiciona uma divisória roxa entre as seções */
+section {
+    position: relative;
+    padding: 50px 0;
+}
+
+section:not(#baixe-app) {
+    border-bottom: 4px solid #6A1E9C; /* Roxo escuro */
+}
+
+#baixe-app {
+    border-top: 4px solid #6A1E9C; /* Roxo escuro */
+}
+
+section:not(#baixe-app) {
+    border-bottom: 4px solid #6A1E9C;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#baixe-app {
+    border-top: 4px solid #6A1E9C;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Divisória entre o carrossel e a seção Sobre */
+#carouselExample {
+    border-bottom: 4px solid #6A1E9C; /* Roxo escuro */
+}
